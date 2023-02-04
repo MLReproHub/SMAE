@@ -1,0 +1,3 @@
+SqueezeNet:
+  num_classes: 200
+  dropout: 0.5

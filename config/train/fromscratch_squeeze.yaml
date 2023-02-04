@@ -1,0 +1,38 @@
+batch_size: &batch_size 128
+num_epochs: 200
+n_freeze:
+
+dataloader:
+  train:
+    TinyImagenetDataLoader: # TinyImagenetFastDataLoader
+      batch_size: *batch_size
+      train: true
+      num_workers: 1
+      extra_transforms: random_crop
+  test:
+    TinyImagenetDataLoader: # TinyImagenetFastDataLoader
+      batch_size: *batch_size
+      train: false
+
+init_fn:
+  xavier_uniform_:
+    gain: !eval sqrt(2)  # ReLU gain: sqrt(2)
+loss:
+  CrossEntropyLoss: { }
+optim:
+  AdamW:
+    # Per Hassani et al.
+    betas: !!python/tuple
+      - 0.9
+      - 0.999
+    lr: !eval 1e-3 * batch_size / 128
+    weight_decay: 0.01
+scheduler:
+  SequentialLR:
+    schedulers:
+      - LinearLR:
+          total_iters: !eval num_epochs // 20
+      - CosineAnnealingLR:
+          T_max: !eval num_epochs - num_epochs // 20
+    milestones:
+      - !eval num_epochs // 20

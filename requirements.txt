@@ -1,0 +1,12 @@
+dataclasses
+datasets
+matplotlib
+neptune-client
+numpy
+pandas
+pillow
+pyyaml
+sympy
+torch
+torchvision
+tqdm

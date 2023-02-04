@@ -1,0 +1,25 @@
+MAE:
+  kernel_size: 4
+  masking_strategy: random-sampling
+  masking_ratio: 0.75
+  which_unfolder: unfold
+  normalize: false
+  decoder:
+    TransformerDecoder:
+      activation: ReLU
+      d_model: 128
+      dropout_p: 0.1
+      h_dim_mlp: 256
+      norm_first: true
+      num_heads: 4
+      num_layers: 2
+  encoder:
+    TransformerEncoder:
+      activation: ReLU
+      d_model: 256
+      dropout_p: 0.1
+      h_dim_mlp: 512
+      norm_first: true
+      num_heads: 4
+      num_layers: 7
+      add_ln_end: true
