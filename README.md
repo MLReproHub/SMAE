@@ -89,7 +89,7 @@ usage: main.py
 ```
 
 The following are their descriptions:
-**TODO**
+Please see `src/main.py` for more detailed description.
  
  ### Example Runs
 - **Self-Supervised Pre-Training**
@@ -104,6 +104,8 @@ The following are their descriptions:
  - **Transfer Learning**
  	- On CUB:<br>`python main.py --intention finetune --model_key mae --train_config cub --resume`
  
-**TODO** Need script / cli args for pre--trained model evaluation
+### Experiments
+- To generatate reconstructions of pre-trained models please consult:<br>`src/experiments/create_figure_2.py`
+- &lt;we will update this list with new experiments&gt;
 
  
