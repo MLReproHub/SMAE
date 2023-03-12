@@ -31,12 +31,13 @@ For our experiments we made use of two datasets:
 ### Model Checkpoints <a href="#checkpoints"></a>
 Below we provide checkpoints for our trained models on the corresponding datasets. Please make sure to place those inside the directory `checkpoints` under project root.
 
-| Model  | Pre-Train  | Fine-Tune  | Link |
-| ------------ | ------------ | ------------ | ------------ |
-| SqueezeNet  | - | TIN | [Google Drive](https://drive.google.com/file/d/1ImHUa8BtafVEMs9JMQvKCxUVfJ-wGGkU/view?usp=sharing "Google Drive") |
-| MAE/ViT-Lite | TIN  | TIN | [Google Drive](https://drive.google.com/file/d/1NnQ3zQjcDLnEOACAGjngngvCo-ymAWW1/view?usp=sharing "Google Drive") |
-| MAE/ViT-Lite | TIN  | CUB | [Google Drive](http://drive.google.com "Google Drive") |
-| SMAE/ViT-Lite | TIN  | TIN | [Google Drive](http://drive.google.com "Google Drive") |
+| Model        | Pre-Train  | Fine-Tune | Masking Method | Link                                                                                              |
+|--------------| ------------ |---------|----------------|-------------------------------------------------------------------------------------------------------------------|
+| SqueezeNet   | - | TIN     | -              | [Google Drive](https://drive.google.com/file/d/1ImHUa8BtafVEMs9JMQvKCxUVfJ-wGGkU/view?usp=sharing "Google Drive") |
+| MAE          | TIN  | TIN     | Random         | [Google Drive](https://drive.google.com/file/d/1NnQ3zQjcDLnEOACAGjngngvCo-ymAWW1/view?usp=sharing "Google Drive") |
+| MAE          | TIN  | CUB     | Random         | [Google Drive](http://drive.google.com "Google Drive") |
+| SMAE (α=0.5) | TIN  | TIN     | Random         | [Google Drive](https://drive.google.com/file/d/1Oe5xG7xFiYe974-_jZ1ViNQAgdp5oaoR/view?usp=sharing "Google Drive") |
+| SMAE (α=0.5) | TIN  | CUB     | Block          | [Google Drive](https://drive.google.com/file/d/1JuR_Xe6Lp8xupA-BIy2f33TxmDxhSxsM/view?usp=sharing "Google Drive") |
 
 Feel free to contact any of the authors if the links above stop working.
 
