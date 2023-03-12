@@ -45,38 +45,29 @@ Under project root one can find the following directory tree:
 
 
 📦`checkpoints`: model checkpoints
-
 📂`config`: config files
-
 &nbsp;&nbsp;┣  📂`model`: for different model versions
-
 &nbsp;&nbsp;┗  📂`train`: for different training hyperparameters
-
 📂`data`
 &nbsp;&nbsp;┣  📦`cub-200-2011`: CUB dataset files
-
 &nbsp;&nbsp;┗  📦`tiny-imagenet-200`: TIN dataset files
-
 📂`src`: Sources root. *Make sure it is in PYTHONPATH or you start inside.*
-
  ┣ 📂`dataset`: dataloader classes
- 
  ┣ 📂`loss`: loss classes
- 
  ┣ 📂`model`: model classes and their dependencies
- 
  ┣ 📂`utilities`: utility methods and classes
- 
  ┃📜...
- 
- ┗📜`main.py`: entry point
+ ┃📜`evaluate.py`: model evaluation entry point
+ ┗📜`main.py`: training entry point
  
  
 ## How To Run <a href="#run"></a>
 After making sure that the developmental environment is setup and that SqueezeNet checkpoint exists in the `checkpoints` directory, you can train a MAE model using the `main.py` script. This should be run from inside the `src` directory.
 
+To evaluate a trained model from a saved checkpoint, you can use the `evaluate.py` script. This should be run from inside the `src` directory.
+
 ### CLI arguments
-The script accepts the following CLI arguments (enumerating all the possible values):
+The `main.py` script accepts the following CLI arguments (enumerating all the possible values):
 ```
 usage: main.py 
 	[--model_key MODEL_KEY]         mae, mae-blockmask, squeeze
@@ -90,7 +81,14 @@ usage: main.py
 
 The following are their descriptions:
 Please see `src/main.py` for more detailed description.
- 
+
+
+The `evaluate.py` script accepts the following CLI arguments
+```
+usage: evaluate.py CHECKPOINTFILE	filename, including path, to saved checkpoint to evaluate
+```
+
+
  ### Example Runs
 - **Self-Supervised Pre-Training**
 	- Pixel Loss, Random Masking:<br>```python main.py --intention pretrain --train_config default --model_key mae```
@@ -103,6 +101,10 @@ Please see `src/main.py` for more detailed description.
  
  - **Transfer Learning**
  	- On CUB:<br>`python main.py --intention finetune --model_key mae --train_config cub --resume`
+
+- **Evaluate Trained Model**
+	- `python evaluate.py ../checkpoints/mae_e7d2_128_finetune.pth`
+
  
 ### Experiments
 - To generatate reconstructions of pre-trained models please consult:<br>`src/experiments/create_figure_2.py`
