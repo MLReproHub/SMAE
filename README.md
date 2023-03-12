@@ -71,14 +71,14 @@ Under project root one can find the following directory tree:
  ┃📜...
 
  ┃📜`evaluate.py`: model evaluation entry point
- 
+
  ┗📜`main.py`: training entry point
  
  
 ## How To Run <a href="#run"></a>
 After making sure that the developmental environment is setup and that SqueezeNet checkpoint exists in the `checkpoints` directory, you can train a MAE model using the `main.py` script. This should be run from inside the `src` directory.
 
-To evaluate a trained model from a saved checkpoint, you can use the `evaluate.py` script. This should be run from inside the `src` directory.
+To evaluate a trained model from a saved checkpoint, you can use the `evaluate.py` script.
 
 ### CLI arguments
 The `main.py` script accepts the following CLI arguments (enumerating all the possible values):
