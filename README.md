@@ -29,7 +29,7 @@ For our experiments we made use of two datasets:
 - **CUB-200 (CUB)**: gets automatically downloaded from [caltech.edu](https://www.vision.caltech.edu/datasets/cub_200_2011/) into `data/cub-200-2011` directory. The latter is also created from our dataloader.
 
 ### Model Checkpoints <a href="#checkpoints"></a>
-Below we provide checkpoints for our trained models on the corresponding datasets. "GD" and "OD" refer to GoogleDrive and OneDrive respectively. Please make sure to place those inside the directory `checkpoints` under project root.
+Below we provide checkpoints for our trained models on the corresponding datasets. Please make sure to place those inside the directory `checkpoints` under project root.
 
 | Model  | Pre-Train  | Fine-Tune  | Link |
 | ------------ | ------------ | ------------ | ------------ |
@@ -38,7 +38,7 @@ Below we provide checkpoints for our trained models on the corresponding dataset
 | MAE/ViT-Lite | TIN  | CUB | [Google Drive](http://drive.google.com "Google Drive") |
 | SMAE/ViT-Lite | TIN  | TIN | [Google Drive](http://drive.google.com "Google Drive") |
 
-Feel free to contact any of the authors if the links below stop working.
+Feel free to contact any of the authors if the links above stop working.
 
 ### Project Structure
 Under project root one can find the following directory tree:
