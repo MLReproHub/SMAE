@@ -2,4 +2,4 @@ project: PMAE/PMAE
 api_token: eyJhcGlfYWRkcmVzcyI6Imh0dHBzOi8vYXBwLm5lcHR1bmUuYWkiLCJhcGlfdXJsIjoiaHR0cHM6Ly9hcHAubmVwdHVuZS5haSIsImFwaV9rZXkiOiJjM2MyMmQ4Mi0zOGVhLTQ4MDYtOWQ1OC1hZTdjMzBjOTQ1Y2QifQ==
 capture_hardware_metrics: True
 # async (default), offline, debug
-mode: async
+mode: debug
