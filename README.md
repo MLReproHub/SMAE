@@ -45,19 +45,33 @@ Under project root one can find the following directory tree:
 
 
 📦`checkpoints`: model checkpoints
+
 📂`config`: config files
+
 &nbsp;&nbsp;┣  📂`model`: for different model versions
+
 &nbsp;&nbsp;┗  📂`train`: for different training hyperparameters
+
 📂`data`
+
 &nbsp;&nbsp;┣  📦`cub-200-2011`: CUB dataset files
+
 &nbsp;&nbsp;┗  📦`tiny-imagenet-200`: TIN dataset files
+
 📂`src`: Sources root. *Make sure it is in PYTHONPATH or you start inside.*
+
  ┣ 📂`dataset`: dataloader classes
+
  ┣ 📂`loss`: loss classes
+
  ┣ 📂`model`: model classes and their dependencies
+
  ┣ 📂`utilities`: utility methods and classes
+
  ┃📜...
+
  ┃📜`evaluate.py`: model evaluation entry point
+ 
  ┗📜`main.py`: training entry point
  
  
@@ -79,7 +93,6 @@ usage: main.py
 	[--device DEVICE]               cuda
 ```
 
-The following are their descriptions:
 Please see `src/main.py` for more detailed description.
 
 
