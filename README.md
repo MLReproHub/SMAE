@@ -33,10 +33,10 @@ Below we provide checkpoints for our trained models on the corresponding dataset
 
 | Model  | Pre-Train  | Fine-Tune  | Link |
 | ------------ | ------------ | ------------ | ------------ |
-| SqueezeNet  | - | TIN | [GD](http://drive.google.com "GD") [OD](http://onedrive.microsoft.com "OD") |
-| MAE/ViT-Lite | TIN  | TIN | [GD](http://drive.google.com "GD") [OD](http://onedrive.microsoft.com "OD")  |
-| MAE/ViT-Lite | TIN  | CUB | [GD](http://drive.google.com "GD") [OD](http://onedrive.microsoft.com "OD")  |
-| SMAE/ViT-Lite | TIN  | TIN | [GD](http://drive.google.com "GD") [OD](http://onedrive.microsoft.com "OD")  |
+| SqueezeNet  | - | TIN | [Google Drive](https://drive.google.com/file/d/1ImHUa8BtafVEMs9JMQvKCxUVfJ-wGGkU/view?usp=sharing "Google Drive") |
+| MAE/ViT-Lite | TIN  | TIN | [Google Drive](https://drive.google.com/file/d/1NnQ3zQjcDLnEOACAGjngngvCo-ymAWW1/view?usp=sharing "Google Drive") |
+| MAE/ViT-Lite | TIN  | CUB | [Google Drive](http://drive.google.com "Google Drive") |
+| SMAE/ViT-Lite | TIN  | TIN | [Google Drive](http://drive.google.com "Google Drive") |
 
 Feel free to contact any of the authors if the links below stop working.
 
