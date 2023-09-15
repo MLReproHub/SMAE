@@ -1,4 +1,7 @@
 # Semantic Masked Autoencoders
+This repository hosts the code for our accepted submission to the ML Reproducibility Challenge 2022:
+[Masked Autoencoders are Small Scale Vision Learners: A Reproducibility Study Under Resource Constraints](https://openreview.net/forum?id=KXfjZPL5pqr)
+
 
 ## Table of Contents
 1. [Development Setup](#setup)
