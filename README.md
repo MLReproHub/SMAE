@@ -38,7 +38,7 @@ Below we provide checkpoints for our trained models on the corresponding dataset
 |--------------| ------------ |---------|----------------|-------------------------------------------------------------------------------------------------------------------|
 | SqueezeNet   | - | TIN     | -              | [Google Drive](https://drive.google.com/file/d/1ImHUa8BtafVEMs9JMQvKCxUVfJ-wGGkU/view?usp=sharing "Google Drive") |
 | MAE          | TIN  | TIN     | Random         | [Google Drive](https://drive.google.com/file/d/1NnQ3zQjcDLnEOACAGjngngvCo-ymAWW1/view?usp=sharing "Google Drive") |
-| MAE          | TIN  | CUB     | Random         | [Google Drive](http://drive.google.com "Google Drive") |
+| MAE          | TIN  | CUB     | Random         | [Google Drive](https://drive.google.com/file/d/13Lk434swaFcH7ZwltVi63LUZ9Cw5A442/view?usp=share_link) |
 | SMAE (α=0.5) | TIN  | TIN     | Random         | [Google Drive](https://drive.google.com/file/d/1Oe5xG7xFiYe974-_jZ1ViNQAgdp5oaoR/view?usp=sharing "Google Drive") |
 | SMAE (α=0.5) | TIN  | CUB     | Block          | [Google Drive](https://drive.google.com/file/d/1JuR_Xe6Lp8xupA-BIy2f33TxmDxhSxsM/view?usp=sharing "Google Drive") |
 
